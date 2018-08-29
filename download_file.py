@@ -20,7 +20,7 @@ url = 'https://dataplatformblvolve.blob.core.windows.net/pub/Seismic.ST10010.zip
 #url = 'https://dataplatformblvolve.blob.core.windows.net/pub/Reports_Volve.zip'
 
 
-def download_file(url, chunk_size = 2**30): # 2**30 corresponds to 1 GB chunks
+def download_file(url, chunk_size = 2**26): # 2**30 corresponds to 1 GB chunks
 
     bytes_read = 0
     local_filename = url.split('/')[-1]
