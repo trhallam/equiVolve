@@ -103,5 +103,5 @@ def sizeof_fmt(num, suffix='B'):
         num /= 1024.0
     return "%.1f%s%s" % (num, 'Yi', suffix)
 
-
-download_file(url)
+if __name__ == "__main__":
+    download_file(url)
